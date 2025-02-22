@@ -3,8 +3,8 @@ const { resolve } = require('path');
 const mongoose =require('mongoose');
 require('dotenv').config();
 const bodyParser = require('body-parser');
-const user = require( './schema')
-const User = mongoose.model('User', userSchema);
+
+const User = require("./schema")
 
 const app = express();
 const port = process.env.PORT || 6565;
